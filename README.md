@@ -20,6 +20,8 @@ The `centroids` dictionary is initialized for K clusters from among the data poi
 Then, a loop implements Expectation Maximization by calling `assignNearest()` and `recomputeCentroids()` in turn, each using the output of the most recent call to the other. The variable `update` is used to break out of the EM loop when there is no change in cluster assignment between two successive loops.
 Finally the cluster centers are printed and data plotted using the API provided by `matplotlib`.
 
+![](https://github.com/ShreyasKolpe/Clustering/blob/master/k-means-visualization.png)
+
 ## Gaussian Mixture Models
 
 GMMs allow a point to belong to different 'clusters' to varying degrees. More precisely, GMMs attempt to approximate a generative model that explains the data and this model is assumed to be a mixture of Gaussians. Finding the Gaussians involves finding their means, covariance matrices and amplitudes by the iterative Expectation Maximization algorithm.
@@ -48,4 +50,5 @@ returned.
 The `maxMembership` is the label for each point as the Gaussian that gives it the highest membership value
 Finally, the Gaussians are printed and data is plotted.
 
+![](https://github.com/ShreyasKolpe/Clustering/blob/master/gmm-visualization2.png)
 
